@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+
+nav{
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    background-color: #293042;
+    transition: all .5s;
+}
+
+a{
+    opacity: .6s!important;
+}
+
+a:hover{
+    opacity: .9!important;
+}
+
+.active-nav header nav{
+    transform: translateX(-100%);
+    transition: all .5s;
+}
+
+
+.active-nav main{
+    width: 100%!important;
+    transition: all .5s;
+}
+
+.active-nav header button{
+    left: 1%;
+    transition: all .5s;
+}
+
+nav div{
+    visibility: visible;
+}
+
+nav div h5{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1.7rem;
+
+}
+header button{
+    position: absolute;
+    left: 21%;
+    top: 2%;
+    transition: all .5s;
+    background: transparent;
+    border: none;
+    transform: scale(1.5);
+}
+
+main{
+    width: 80%;
+    background-color: #202634;
+    min-height: 100vh;
+    margin-left: auto;
+    transition: all .5s;
+}
+
+.navig{
+    margin-left: 15px;
+    margin-top: 80px;
+}
+
+.navig h6{
+    opacity: .7;
+    font-size:1rem ;
+    text-transform: capitalize;
+}
+
+.navig div li{
+    list-style: none;
+    margin-left: 20px;
+    opacity: .5;
+    font-size: .9rem;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.navig div li a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize  ;
+}
+
+.nav-hidden{
+    width: 80%;
+    margin: auto;
+    visibility: hidden;
+    opacity: 0;
+    height: 0px;
+}
+.active-visible{
+    visibility: visible;
+    opacity: 1;
+    transition: all .7s;
+    height: auto;
+}
+
+.fa-solid,.fa-chevron-down{
+    transition: all .5s;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: all .5s;
+}
+.profil{
+    position: absolute;
+    right: 1%;
+    top: 2%;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-prfl{
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.name-prfl{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.name-prfl p i{
+    transition: all .5s;
+}
+
+.active-toggle .name-prfl p i{
+    transform: rotate(180deg);
+    transition: all .5s;
+}
+
+.name-prfl:hover{
+    cursor: pointer;
+}
+
+.name-prfl:hover p{
+    opacity: .8;
+}
+
+.name-prfl p{
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+p i{
+    margin-left: 10px;
+}
+
+.img-prfl span{
+    transform: scale(1.6);
+}
+
+.info-prfl{
+    width: 80%;
+    height: 120px;
+    border: 1px solid #293042;
+    position: absolute;
+    bottom: -120px;
+    background-color: #293042;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.active-toggle .info-prfl{
+    visibility: visible;
+    opacity: 1;
+    transition: all .2s;
+}
+
+.info-prfl ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.info-prfl ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.info-prfl ul li a i{
+    margin-right: 5px;
+}
+
+.info-prfl ul li a:hover{
+    opacity: .8;
+}
+
+
+
+
+main h4{
+    padding-top: 150px;
+    padding-left: 30px;
+}
+
+.contain-classe{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+main h6{
+    margin-top: 50px;
+    padding-left: 25px;
+    font-size: 0.9em;
+    text-transform: capitalize;
+}
+
+h6 i{
+    font-size: 0.8em;
+}
+
+.box-classe{
+    width: 30%;
+    height: auto;
+    padding-bottom: 30px;
+    border: 1px solid transparent;
+    background-color: #293042;
+    border-radius: 5px;
+    position: relative;
+}
+
+.box-classe p{
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+    margin-top: 8px;
+}
+
+.box-classe p:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: -30%;
+}
+
+.box-classe li{
+    list-style: none;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 8px 2px;
+    margin: 2px 2px;
+
+}
+.box-classe li span{
+    position: absolute;
+    right: 2%;
+}
+
+.box-classe li:nth-child(odd){
+    background-color: #293042;
+}
+
+.box-classe li:nth-child(even){
+    background-color: #545968;
+}
+
+
+.contain-student{
+    width: 96%;
+    height: auto;
+    border: 1px solid transparent;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #293042;
+}
+
+.table{
+    width: 100%;
+}
+
+.table tr{
+    height: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.head-table{
+    position: relative;
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+td{
+    text-transform: capitalize;
+}
+
+.table tr:nth-child(odd){
+    background-color: #293042;
+}
+
+.table tr:nth-child(even){
+    background-color: #545968;
+}
+
+
+
+/* style liste student */
+
+
+.container-read-student{
+    width: 90%;
+    margin: auto;
+    padding-top: 200px;
+    border: 1px solid red;
+}
+
+
+/* style detail student */
+
+.retour{
+    position: absolute!important;
+    top: 12%;
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: all .5!important    ;
+}
+
+.retour:hover{
+    color: white;
+    opacity: .6;
+    transition: all .5s;
+}
+
+
+.information{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.information p span{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* style update student */
+
+.form-student{
+    width: 90%;
+    margin:auto;
+    margin-top: 30px;
+
+}
+
+.form-student form p label{
+    width: 15%;
+}
+
+.form-student form p input, .form-student form p select, .form-student form button{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all .5s;
+}
+
+.form-student form button:hover{
+    background-color: white;
+    color: #202634;
+    transition: all .5s;
+
+}
+
+.form-student form p option{
+    color: #202634;
+}
+
